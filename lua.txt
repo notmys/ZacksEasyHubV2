@@ -37,9 +37,9 @@ end
 if SCRIPT_EXECUTED or getgenv().SCRIPT_EXECUTED and not _G.SCRIPT_EXECUTED == true then
     -- I want to keep the 2 notifications, it make's it more easier for observing details without trying to compact it into 1 big title screen.
     if executor_Name == "Nihon" then
-        return Notification:Notify("Heads Up!", "Zacks Easy Hub is already running!", 7.5)
+        return Notification:Notify("Heads Up!", "Zacks Easy Hub v2  is already running!", 7.5)
     else
-        Notification.Notify("Heads Up!", "Zacks Easy Hub is already running!", "rbxassetid://93594537601787", {
+        Notification.Notify("Heads Up!", "Zacks Easy Hub v2  is already running!", "rbxassetid://93594537601787", {
             Duration = 7.5,       
             Main = {
                 Rounding = true,
@@ -482,7 +482,7 @@ else
     getgenv().has_checked_funcs = true
 end
 wait(0.2)
--- [] -->> Check if the selected experience/game is MIC UP | Ensuring they do not run Zacks Easy Hub outside of MIC UP 🔊 or MIC UP 🔊 17+ <<-- [] --
+-- [] -->> Check if the selected experience/game is MIC UP | Ensuring they do not run Zacks Easy Hub v2  outside of MIC UP 🔊 or MIC UP 🔊 17+ <<-- [] --
 if getgenv().PlaceID == 6884319169 then
     print("\n<--------------------->\nConnected On MIC UP 🔊\n<--------------------->\n")
 elseif getgenv().PlaceID == 15546218972 then
@@ -665,7 +665,7 @@ wait(0.3)
                 textLabel.Size = UDim2.new(0.8, 0, 0.2, 0)
                 textLabel.Position = UDim2.new(0.1, 0, 0.4, 0)
                 textLabel.BackgroundTransparency = 1
-                textLabel.Text = "Current Status: <font color=\"rgb(255,0,0)\">Frozen</font>\n--------------\n🎇 Zacks Easy Hub 🎇\n----------------------------\nIs creating a Baseplate,\n\nPlease wait until this screen disappears."
+                textLabel.Text = "Current Status: <font color=\"rgb(255,0,0)\">Frozen</font>\n--------------\n🎇 Zacks Easy Hub v2  🎇\n----------------------------\nIs creating a Baseplate,\n\nPlease wait until this screen disappears."
                 textLabel.RichText = true
                 textLabel.TextColor3 = Color3.fromRGB(163, 162, 165)
                 textLabel.TextScaled = true
@@ -678,7 +678,7 @@ wait(0.3)
                 wait(0.3)
                 if game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("BASEPLATE_LOADING") then
                     local bruh_GUI = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("BASEPLATE_LOADING")
-                    bruh_GUI:FindFirstChildOfClass("Frame"):FindFirstChildOfClass("TextLabel").Text = "Current Status: <font color=\"rgb(0, 238, 0)\">Not Frozen</font>\n--------------\n🎇 Zacks Easy Hub 🎇\n----------------------------\nEnjoy your anti-void/BasePlate."
+                    bruh_GUI:FindFirstChildOfClass("Frame"):FindFirstChildOfClass("TextLabel").Text = "Current Status: <font color=\"rgb(0, 238, 0)\">Not Frozen</font>\n--------------\n🎇 Zacks Easy Hub v2  V2 🎇\n----------------------------\nEnjoy your anti-void/BasePlate."
                     wait(0.7)
                     bruh_GUI:Destroy()
                 else
@@ -877,9 +877,9 @@ local Window
 wait(0.1)
 if executor_Name ~= "Solara" then
     Window = Rayfield:CreateWindow({
-        Name = "📜 Zacks Easy Hub V2 📜 | V7.2.5-D | Emote Keybinds: False",
+        Name = "📜 Zacks Easy Hub v2  V2 📜 | V7.2.5-D | Emote Keybinds: False",
         LoadingTitle = "Enjoy ruling MIC UP 🔊",
-        LoadingSubtitle = "Zacks Easy Hub V2 | Success.",
+        LoadingSubtitle = "Zacks Easy Hub v2  V2 | Success.",
         ConfigurationSaving = {
             Enabled = false,
             FolderName = "ConfigurationZacskEasyHub",
@@ -903,9 +903,9 @@ if executor_Name ~= "Solara" then
     })
 else
     Window = Rayfield:CreateWindow({
-        Name = "📜 Zacks Easy Hub V2 📜 | V7.2.5-D | Emote Keybinds: False",
+        Name = "📜 Zacks Easy Hub v2  V2 📜 | V7.2.5-D | Emote Keybinds: False",
         LoadingTitle = "Enjoy ruling MIC UP 🔊",
-        LoadingSubtitle = "Zacks Easy Hub V2 | Success.",
+        LoadingSubtitle = "Zacks Easy Hub v2  V2 | Success.",
         ConfigurationSaving = {
             Enabled = false,
             FolderName = "ConfigurationZacskEasyHub",
@@ -3378,13 +3378,13 @@ Callback = function(crazy)
         end
 
         local write_words = {
-            "Zacks Easy Hub [WINNING]!",
+            "Zacks Easy Hub v2  [WINNING]!",
             "Join: VJh3kkYzBn",
-            "Zacks Easy Hub [WE UP]!",
-            "Zacks Easy Hub V6, POWERFUL!",
+            "Zacks Easy Hub v2  [WE UP]!",
+            "Zacks Easy Hub v2  V6, POWERFUL!",
             "Powering Automation | Scripting",
-            "Zacks Easy Hub | WE OP!",
-            "Zacks Easy Hub | WE SIGMA",
+            "Zacks Easy Hub v2  | WE OP!",
+            "Zacks Easy Hub v2  | WE SIGMA",
             "BEST FREE SCRIPT RN!",
             "WE ARE TAKING OVER, JOIN US!",
             "IF YOU DONT JOIN, YOUR NOT SIGMA"
@@ -7410,13 +7410,13 @@ Callback = function()
 end,})
 
 getgenv().ScriptOwnersLabel = Tab15:CreateParagraph({Title = "Script Owner:", Content = "M1RD3RCAUGHT [Deleted] | ItsYoDawgWsgGng | [Deleted]"})
-getgenv().MadeEasy = Tab15:CreateParagraph({Title = "Zacks Easy Hub", Content = "Scripting Made Easy"})
-getgenv().YouTube_Plug = Tab15:CreateParagraph({Title = "Zacks Easy Hub", Content = "https://www.youtube.com/@AnonymousExploiting"})
-getgenv().Discord_Plug = Tab15:CreateParagraph({Title = "Zacks Easy Hub", Content = "https://discord.gg/VJh3kkYzBn"})
-getgenv().JoinDiscordLabel = Tab15:CreateParagraph({Title = "Zacks Easy Hub", Content = "Join the discord for juicy updates, and maybe giveaways."})
-getgenv().Release_Date = Tab15:CreateParagraph({Title = "Zacks Easy Hub", Content = "V6 Released On: 11/5/2024"})
-getgenv().Scammers = Tab15:CreateParagraph({Title = "Zacks Easy Hub", Content = "If you bought this, you got scammed."})
-getgenv().ScriptIsOpen_Source = Tab15:CreateParagraph({Title = "Zacks Easy Hub", Content = "This script is open source, but still credit me."})
+getgenv().MadeEasy = Tab15:CreateParagraph({Title = "Zacks Easy Hub v2 ", Content = "Scripting Made Easy"})
+getgenv().YouTube_Plug = Tab15:CreateParagraph({Title = "Zacks Easy Hub v2 ", Content = "https://www.youtube.com/@AnonymousExploiting"})
+getgenv().Discord_Plug = Tab15:CreateParagraph({Title = "Zacks Easy Hub v2 ", Content = "https://discord.gg/VJh3kkYzBn"})
+getgenv().JoinDiscordLabel = Tab15:CreateParagraph({Title = "Zacks Easy Hub v2 ", Content = "Join the discord for juicy updates, and maybe giveaways."})
+getgenv().Release_Date = Tab15:CreateParagraph({Title = "Zacks Easy Hub v2 ", Content = "V6 Released On: 11/5/2024"})
+getgenv().Scammers = Tab15:CreateParagraph({Title = "Zacks Easy Hub v2 ", Content = "If you bought this, you got scammed."})
+getgenv().ScriptIsOpen_Source = Tab15:CreateParagraph({Title = "Zacks Easy Hub v2 ", Content = "This script is open source, but still credit me."})
 
 if getgenv().camera_zoom_data then
     print("CameraMaxZoomDistance - Data | True")
@@ -7442,7 +7442,7 @@ if getgenv().spammed_setup_print then
     warn("Already did this print lol.")
 else
     for i = 1, 100 do
-        print("Zacks Easy Hub v2 :: WE ARE FUCKING LEADING FAT BITCH. [apologies].")
+        print("Zacks Easy Hub v2  v2 :: WE ARE FUCKING LEADING FAT BITCH. [apologies].")
     end
     getgenv().spammed_setup_print = true
 end
