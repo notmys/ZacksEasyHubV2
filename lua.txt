@@ -671,7 +671,7 @@
     if getgenv().emotes_bypassed then
         warn("Emotes are already bypassed.")
     else
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/nomys/emote_bypass/refs/heads/main/.lua'))()
+        loadstring(game:HttpGet('https://github.com/notmys/emote_bypass/blob/main/.lua'))()
         getgenv().emotes_bypassed = true
     end
     wait(0.1)
